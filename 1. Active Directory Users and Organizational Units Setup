@@ -1,0 +1,42 @@
+# Active Directory Users and Organizational Units Setup
+
+**Objective:** We will be creating Organizational Units (OU) for our company, and then we’ll be adding users and groups to the respective OU’s. We’ll do this Using Active Directory and Windows Server and we’ll verify the setup in Windows 10.
+
+
+**Scenario:** We need to create user accounts, groups, and OUs under the labscholas.local domain. Specifically, we are requested to:
+
+- Add 9 users
+- Create the following Organizational Units:
+
+  - OU - Chicago
+    - Sub OU  Accounting
+        - Sub OU Users
+     -  Sub OU Purchasing
+        - Sub OU Users
+     -  Sub OU Quality Assurance
+        - Sub OU Users
+
+While we’ve used our own names and structures, this project is general enough to be used to create your own Active Directory system.
+
+Active Directory (AD) is used to manage and organize users, computers, and resources within a network. It acts as a centralized system where administrators can create user accounts, manage permissions, and set up policies for different departments. This ensures that each user has the appropriate access to resources and that the network remains secure and efficient. By centralizing everything, AD simplifies the management of a company's IT infrastructure.
+
+## Step 1: Users
+
+Boot up the Windows 2016 Server VM and load the Server Manager. To manage user objects, groups, and computers, first click on "Tools" in the top right corner and then select "Active Directory Users and Computers." 
+
+![AD-1.png](https://i.postimg.cc/zfjzQDY8/AD-1.png)
+
+
+This window allows us to manage all our user objects, groups, and computers. To create a new user, right-click on the labscholas.local domain, then choose "New" > "User."
+
+![AD-2.png](https://i.postimg.cc/vZwGHxQG/AD-2.png)
+
+To enter a new user, fill in the user's first and last name fields. Set the User logon name as the first letter of the user's first name, followed by a dot, and then the user's last name, all in lowercase. Once completed, click "Next."
+
+<div align="center">
+<img src=https://newfastuff.com/wp-content/uploads/2019/05/bW7QXVB.png" >
+<p>Perfectly balanced</p>
+</div>
+
+
+[![AD-3.png](https://i.postimg.cc/JzR45HSP/AD-3.png)](https://postimg.cc/8jnS1cp6)
